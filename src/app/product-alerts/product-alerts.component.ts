@@ -9,5 +9,6 @@ import { Product } from '../products';
 export class ProductAlertsComponent {
 
   @Input() product!: Product;
+  @Output() notify = new EventEmitter();
 
 }
